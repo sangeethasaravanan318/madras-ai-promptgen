@@ -53,31 +53,33 @@ const Index = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-red-600 mb-4">
                 Your Tech Journey Begins @ Madras Engineering College
               </h1>
-              <p className="text-lg md:text-xl text-blue-700 mb-6">
+              <p className="text-lg md:text-xl text-blue-700 mb-8">
                 India's 1st Engineering College Specialising in IT, Computer Science, Data Science, 
                 Artificial Intelligence, Machine Learning, Cyber Security & Business Systems
               </p>
-              <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-                <div className="flex items-center gap-2 text-foreground">
-                  <Phone className="w-5 h-5" />
-                  <span>+91 7002080020</span>
-                </div>
-                <div className="flex items-center gap-2 text-foreground">
-                  <MapPin className="w-5 h-5" />
-                  <span>Chennai, India</span>
-                </div>
-                <div className="flex items-center gap-2 text-foreground">
-                  <Mail className="w-5 h-5" />
-                  <span>TNEA Code: 1203</span>
-                </div>
-              </div>
             </div>
             <div className="flex-1 max-w-md">
               <img 
                 src={posterImage} 
                 alt="Madras Engineering College Poster" 
-                className="w-full rounded-lg shadow-2xl"
+                className="w-full rounded-lg shadow-2xl mb-6"
               />
+              <Card className="p-4 bg-white border-2 border-gray-300">
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-foreground">
+                    <Mail className="w-4 h-4" />
+                    <span className="font-semibold">TNEA Code: 1203</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-foreground">
+                    <Phone className="w-4 h-4" />
+                    <span>+91 7002080020</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-foreground">
+                    <MapPin className="w-4 h-4" />
+                    <span>Chennai, India</span>
+                  </div>
+                </div>
+              </Card>
             </div>
           </div>
         </div>
